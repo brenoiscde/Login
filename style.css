@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/img/montain.jpg);
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    margin-top: 15em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+main{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ffffff;
+    border-radius: 16px;
+    max-width: 50%;
+    padding: 40px;
+
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    color: #ffffff;
+    align-items: center;
+}
+h1{
+    margin: 25px;
+    color: #ffffff;
+}
+input{
+    width: 300px;
+    font-size: 18px;
+    padding: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    background: none;
+    
+}
+.input-lock{
+    margin-top: 20px;
+}
+.box{
+    width: 15px;
+    height: 15px;
+   
+}
+a{
+    color: #ffffff;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 30px;
+}
+input::-webkit-input-placeholder{
+    color:#ffffff;
+}
+label{
+    font-weight: 400;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #ffffff;
+
+}
+h2{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+button{
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    font-size: 22px;
+    padding: 7px;
+    margin: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+h2 b {
+    cursor: pointer;
+}
+
+.inputbox{
+    display: flex;
+    align-items: center;
+}
+.icon img{
+    width: 30px;
+    justify-content: end;
+}
