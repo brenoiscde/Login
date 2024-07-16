@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/estilos/senha.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Senha</title>
+    <title>Login</title>
 </head>
 <body>
     <main>
-        <h1>Login</h1>
-        <div class="inputbox">
-            <ion-con class="icon"><img src="/img/letter-svgrepo-com.svg" alt="letter"></ion-con>
-            <input type="email" placeholder="Email">
+        <div class="titulo">
+            <img class="cadeado" src="/img/lock-keyhole-unlocked-svgrepo-com.svg" alt="">
+            <h1>Recuperar senha</h1>
         </div>
-        <div class="inputbox">
-            <ion-con class="icon"><img class="lock" src="/img/lock-svgrepo-com.svg" alt="letter"></ion-con>
-            <input class="input-lock" type="password" placeholder="password">
+        <label for="">Digite seu email para receber o código de verificação</label>
+        <div class="linha">
+            <input type="email" name="" id="" placeholder="Email">
+            <img class="carta" src="/img/email-svgrepo-com.svg" alt="">
+            <button class="reenviar">Reenviar codigo</button>
         </div>
-        <div class="row">
-            <input class="box" type="checkbox">
-            <label>Lembrar-me</label>
-            <a href="">Esqueci minha senha</a>
-        </div>
-        <button>Login</button>
-        <h2>Não tenho uma conta <b>Registrar</b></h2>
+        <h2>Nova senha</h2>
+        <input class="senha" type="password" placeholder="Senha">
+        <h2>Confirmar senha</h2>
+        <input class="senha" type="password" placeholder="Confirmar senha">
+        <a href="/paginas/index.html"><button>Confirmar senha</button></a>
     </main>
 </body>
 </html>
