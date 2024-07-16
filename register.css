@@ -11,7 +11,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
-    margin-top: 15em;
+    margin-top: 10em;
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;
@@ -59,6 +59,8 @@ input{
 .box{
     width: 15px;
     height: 15px;
+    position: relative;
+    right: 35px;
    
 }
 a{
@@ -68,6 +70,7 @@ a{
     font-size: 14px;
     margin-left: 30px;
 }
+
 input::-webkit-input-placeholder{
     color:#ffffff;
 }
@@ -130,7 +133,8 @@ h2 a{
 h2 a:hover{
     color:rgba(0, 0, 0, 0.562);
 }
-
-.row a:hover{
-    color:rgba(0, 0, 0, 0.562);
+.row a {
+    position: relative;
+    right: 65px;
+    
 }
