@@ -11,7 +11,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
-    margin-top: 15em;
+    margin-top: 10em;
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;
@@ -59,7 +59,8 @@ input{
 .box{
     width: 15px;
     height: 15px;
-   
+    position: relative;
+    left: 30px;
 }
 a{
     color: #ffffff;
@@ -67,7 +68,9 @@ a{
     text-decoration: none;
     font-size: 14px;
     margin-left: 30px;
+    
 }
+
 input::-webkit-input-placeholder{
     color:#ffffff;
 }
@@ -98,6 +101,8 @@ button{
     cursor: pointer;
     color: #ffffff;
     transition: transform 0.3s ease;
+    position: relative;
+    right: 20px;
 }
 button:hover{
     background-color: rgba(0, 0, 0, 0.562);
@@ -130,7 +135,8 @@ h2 a{
 h2 a:hover{
     color:rgba(0, 0, 0, 0.562);
 }
-
-.row a:hover{
-    color:rgba(0, 0, 0, 0.562);
+.row a {
+    position: relative;
+    left: 10px;
+    
 }

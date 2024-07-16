@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="/estilos/register.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <main>
+        <h1>Registro</h1>
+        <form id="registerForm" action="/paginas/sucesso.html">
+            <div class="inputbox">
+                <ion-con class="icon"><img src="/img/profile-about-mobile-ui-svgrepo-com.svg" alt="letter"></ion-con>
+                <input id="nome" type="text" placeholder="Nome completo">
+            </div>
+            <div class="inputbox">
+                <ion-con class="icon"><img class="lock" src="/img/letter-svgrepo-com.svg" alt="letter"></ion-con>
+                <input id="email" class="input-lock" type="email" placeholder="Email">
+            </div>
+            <div class="inputbox">
+                <ion-con class="icon"><img class="lock" src="/img/lock-svgrepo-com.svg" alt="letter"></ion-con>
+                <input id="senha" class="input-lock" type="password" placeholder="Senha">
+            </div>
+            <div class="inputbox">
+                <ion-con class="icon"><img class="lock" src="/img/lock-svgrepo-com.svg" alt="letter"></ion-con>
+                <input id="confirma_senha" class="input-lock" type="password" placeholder="Confirme sua sena">
+            </div>
+            <div class="row">
+                <input class="box" type="checkbox">
+                <a class="notificações">Receber notificações</a>
+            </div>
+            <button type="submit" id="btnRegister">Registrar</button>
+        </form>
+        <h2>Já tem uma conta ? <a class="register" href="/index.html">Login</a></h2>
+    </main>
+    <script>
+        document.getElementById("btnRegister").addEventListener("click",function(event){
+            var nome = document.getElementById('nome').value;
+            localStorage.setItem('nomeUser', nome)
+            var email = document.getElementById('email').value;
+            var senha = document.getElementById('senha').value;
+            var confirmaSenha = document.getElementById('confirma_senha').value;
+            
+            if (!nome || !email || !senha || !confirmaSenha){
+                alert('Por favor, preencha todos os campos');
+                event.preventDefault();
+            }else if (senha !== confirmaSenha){
+                alert('As senhas não coincidem');
+                event.preventDefault()
+            }
+        })
+    </script>
+</body>
+</html>
